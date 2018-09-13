@@ -2,7 +2,7 @@
 <ol>
 @foreach (var cd in @Model["cds"])
 {
-  <li><a href='/artists/@Model["artist"].GetId()/cds/@cd.GetId()'>@cd.GetDescription()</a></li>
+  <li><a href='/artists/@Model["artist"].GetId()/cds/@cd.GetId()'>@cd.GetTitle()</a></li>
 }
 </ol>
 <p><a href='/artists/@Model["artist"].GetId()/cds/new'>Add a new cd</a></p>

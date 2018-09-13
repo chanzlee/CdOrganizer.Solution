@@ -23,7 +23,7 @@ namespace CdOrganizer.Controllers
           Artist artist = Artist.Find(artistId);
           model.Add("cd", cd);
           model.Add("artist", artist);
-          return View(model);
+          return View(cd);
        }
     }
 }
